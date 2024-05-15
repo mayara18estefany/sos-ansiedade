@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573695536436",
+    "project_id": "sos-ansiedade",
+    "storage_bucket": "sos-ansiedade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573695536436:android:64cf943cee46ca091e0961",
+        "android_client_info": {
+          "package_name": "com.example.telapi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNjrHv0IIBW6iGtxCAy4zHl0gyp34qWj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

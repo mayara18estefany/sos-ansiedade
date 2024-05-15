@@ -36,7 +36,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="Para que serve o App?"
         android:textColor="@color/material_dynamic_primary30"
-        android:textSize="24sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
@@ -46,10 +46,25 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="359dp"
-        android:layout_height="205dp"
+        android:layout_width="371dp"
+        android:layout_height="259dp"
         android:text="O Sos Ansiedade serve para auxiliar e ajudar pessoas que  sofrem com transtornos de ansiedade.   Fornecemos um aplicativo prático e de fácil acesso para facilitar a sua usabilidade. "
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="210dp" />
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="374dp"
+        android:layout_height="222dp"
+        android:src="@drawable/cerebro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.google.firebase.ktx.Firebase;
+
 public class MainActivity extends AppCompatActivity {
     private ImageView imageServe;
     private ImageView imageMM;
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         imageServe= findViewById(R.id.imageServe);
         imageMM = findViewById(R.id.imageMM);

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         imageServe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), resul.class);
+                Intent intent = new Intent(getApplicationContext(), sobreapp.class);
 
                 startActivity(intent);
             }
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         imageSos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), sos.class);
+                Intent intent = new Intent(getApplicationContext(), Feed.class);
 
                 startActivity(intent);
             }

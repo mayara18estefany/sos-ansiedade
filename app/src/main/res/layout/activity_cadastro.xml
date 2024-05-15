@@ -68,7 +68,7 @@
         android:layout_marginRight="32dp"
         android:background="@drawable/bordas"
         android:ems="10"
-        android:hint="Usuario"
+        android:hint="Usuário"
         android:inputType="textPersonName"
         android:padding="5dp" />
 

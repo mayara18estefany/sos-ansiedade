@@ -85,18 +85,20 @@
         android:inputType="textPersonName"
         android:padding="5dp" />
 
-    <Button
-        android:id="@+id/button"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_cd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/colorbutton"
+        android:backgroundTint="#0670C5"
         android:paddingLeft="16dp"
         android:shadowColor="#FBFBFB"
         android:text="Cadastrar"
-        app:strokeColor="#c9dbe9" />
+        android:textColor="#F8F5F5"
+        app:strokeColor="#C9DBE9" />
 
     <ImageView
         android:id="@+id/imageView9"

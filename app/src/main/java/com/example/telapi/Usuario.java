@@ -1,28 +1,48 @@
 package com.example.telapi;
 
 public class Usuario {
-    public String nome,email,senha,usuario,datadenascimento;
+    private String editNome,editEmail,editSenha,editUsuario,editData;
 
         public Usuario(){
         }
 
     public String getNome() {
-        return nome;
+        return editNome;
+    }
+
+    public void setNome(String nome) {
+        this.editNome = nome;
     }
 
     public String getEmail() {
-        return email;
+        return editEmail;
+    }
+
+    public void setEmail(String email) {
+        this.editEmail = email;
     }
 
     public String getSenha() {
-        return senha;
+        return editSenha;
+    }
+
+    public void setSenha(String senha) {
+        this.editSenha = senha;
     }
 
     public String getUsuario() {
-        return usuario;
+        return editUsuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.editUsuario = usuario;
     }
 
     public String getDatadenascimento() {
-        return datadenascimento;
+        return editData;
+    }
+
+    public void setDatadenascimento(String datadenascimento) {
+        this.editData = datadenascimento;
     }
 }

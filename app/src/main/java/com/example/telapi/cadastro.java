@@ -41,7 +41,7 @@ public class cadastro extends AppCompatActivity {
         editEmail = findViewById(R.id.editEmail);
         bt_cd = findViewById(R.id.bt_cd);
     }
-    private void validarcampos(){
+    private void validarcampos(View view){
         String Editnome = editNome.getText().toString();
         String senha = editSenha.getText().toString();
         String data = editData.getText().toString();
@@ -53,7 +53,13 @@ public class cadastro extends AppCompatActivity {
                 if (!senha.isEmpty()){
 
                     Usuario Usuario = new Usuario();
-                    usuario.setNome(editNome.getText().toString());
+                    Usuario.setNome(editNome.getText().toString());
+                    Usuario.setEmail(editEmail.getText().toString());
+                    Usuario.setUsuario(editUsuario.getText().toString());
+                    Usuario.setSenha(editSenha.getText().toString());
+                    Usuario.setDatadenascimento(editData.getText().toString());
+
+
                     //Cadastro
                     cadastrarUsuario();
 

@@ -1,13 +1,14 @@
 package com.example.telapi;
 
 public class Usuario {
-    private String editNome,editEmail,editSenha,editUsuario,editData;
+    private String Nome,editEmail,editSenha,editUsuario,editData;
 
         public Usuario(){
         }
 
     public String getNome() {
-        return editNome;
+
+            return editNome;
     }
 
     public void setNome(String nome) {

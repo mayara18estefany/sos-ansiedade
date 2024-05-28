@@ -4,6 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color"
     tools:context=".exercicio">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="85dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/resp"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/white"
+        android:text="Respirar"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="389dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="40dp"
+        android:text="Encontre uma posição confortável e tire um tempo para respirar. Feche os olhos e somente se concentre nos movimentos de sua respiração profunda e calma, fique assim por alguns minutos. Por ter efeito imediato na ansiedade, esse exercício pode ser realizado no momento da crise para amenizá-la."
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="366dp"
+        android:layout_height="308dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto"
+        app:srcCompat="@drawable/respirar" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="75dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setaseguir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

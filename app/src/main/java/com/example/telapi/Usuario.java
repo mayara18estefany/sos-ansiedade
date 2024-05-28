@@ -8,11 +8,11 @@ public class Usuario {
 
     public String getNome() {
 
-            return editNome;
+            return Nome;
     }
 
     public void setNome(String nome) {
-        this.editNome = nome;
+        this.Nome = nome;
     }
 
     public String getEmail() {

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color"
+    tools:context=".caminhar">
+
+    <TextView
+        android:id="@+id/Caminhar"
+        android:layout_width="167dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="68dp"
+        android:text="Caminhar"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="389dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="20dp"
+        android:text="Caminhar é simples, pois não requer idas à academia nem comprar roupas especiais. Aliás, quando feito ao ar livre, traz ainda mais benefícios. É um exercício físico completo, ajuda a perder calorias, prroduz endorfina e seus efeitos podem ser sentidos ao longo do dia. Também pode ser uma forma de evitar uma crise de ansiedade iminente."
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Caminhar" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="360dp"
+        android:layout_height="277dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/caminhar" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="85dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setaseguir" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="83dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView20"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setavoltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

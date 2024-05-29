@@ -8,7 +8,7 @@
     tools:context=".mensagens" >
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/imageVoltarFe"
         android:layout_width="99dp"
         android:layout_height="79dp"
         android:layout_marginTop="4dp"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/imageVoltarFe"
         app:srcCompat="@drawable/sosansied" />
 
     <TextView
@@ -54,7 +54,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView27"

@@ -8,29 +8,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class dancar extends AppCompatActivity {
-    private ImageView imageVoltar;
-
+public class contatos extends AppCompatActivity {
+    private ImageView imageVoltarCtt;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dancar);
+        setContentView(R.layout.activity_contatos);
 
-        imageVoltar = findViewById(R.id.imageVoltar);
+        imageVoltarCtt = findViewById(R.id.imageVoltarCtt);
 
-        imageVoltar.setOnClickListener(new View.OnClickListener() {
+        imageVoltarCtt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),caminhar.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
                 startActivity(intent);
             }
         });
-
-
-
-
     }
 }

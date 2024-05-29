@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/danca" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imageVoltar"
         android:layout_width="83dp"
         android:layout_height="67dp"
         android:layout_marginStart="4dp"

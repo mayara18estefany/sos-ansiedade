@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/logo" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageVoltarSo"
         android:layout_width="369dp"
         android:layout_height="234dp"
         android:layout_marginTop="68dp"
@@ -38,7 +38,7 @@
         android:text="Usuário:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageVoltarSo" />
 
     <EditText
         android:id="@+id/editUsuarioLG"
@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageVoltarSo"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView

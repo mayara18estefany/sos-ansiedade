@@ -2,6 +2,7 @@ package com.example.telapi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageView imageExe;
     private ImageView imageFeed;
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         imageExe = findViewById(R.id.imageExe);
         imageFeed = findViewById(R.id.imageFeed);
 
+
+
         imageServe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent);
             }
-        }
-        );
+        });
+
         imageMM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), mensagens.class);
+                Intent intent = new Intent(getApplicationContext(), sos.class);
 
                 startActivity(intent);
             }
@@ -51,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         imageSos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Feed.class);
+                Intent intent = new Intent(getApplicationContext(), contatos.class);
 
                 startActivity(intent);
             }
@@ -78,11 +83,12 @@ public class MainActivity extends AppCompatActivity {
         imageFeed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Feed.class);
+                Intent intent = new Intent(getApplicationContext(), mensagens.class);
 
                 startActivity(intent);
             }
         });
+
 
 
     }

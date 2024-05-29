@@ -34,18 +34,18 @@
 
     <ImageView
         android:id="@+id/imageView18"
-        android:layout_width="360dp"
-        android:layout_height="277dp"
+        android:layout_width="355dp"
+        android:layout_height="269dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
-        app:layout_constraintVertical_bias="0.789"
+        app:layout_constraintVertical_bias="0.589"
         app:srcCompat="@drawable/caminhar" />
 
     <ImageView
-        android:id="@+id/imageView20"
+        android:id="@+id/imageAvanC"
         android:layout_width="85dp"
         android:layout_height="58dp"
         android:layout_marginTop="16dp"
@@ -55,11 +55,11 @@
         app:srcCompat="@drawable/setaseguir" />
 
     <ImageView
-        android:id="@+id/imageView21"
+        android:id="@+id/imageVoltarE"
         android:layout_width="83dp"
         android:layout_height="67dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView20"
+        app:layout_constraintEnd_toStartOf="@+id/imageAvanC"
         app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

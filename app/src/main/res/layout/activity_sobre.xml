@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageVoltarSo"
         android:layout_width="99dp"
         android:layout_height="79dp"
         app:srcCompat="@drawable/logo"
@@ -58,9 +58,10 @@
         android:id="@+id/imageView5"
         android:layout_width="368dp"
         android:layout_height="330dp"
+        android:layout_marginStart="116dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEsqueceuS"
-        app:srcCompat="@drawable/sobreimg"
-        tools:layout_editor_absoluteX="116dp" />
+        app:srcCompat="@drawable/sobreimg" />
 
     <TextView
         android:id="@+id/textNovoCD"
@@ -109,11 +110,16 @@
         android:id="@+id/textView14"
         android:layout_width="239dp"
         android:layout_height="58dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="sans-serif"
         android:text="3. Calafrios, suor e tremores;"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="657dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.103" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

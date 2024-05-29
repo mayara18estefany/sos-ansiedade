@@ -9,10 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
+
 
 public class cadastro extends AppCompatActivity {
-    FirebaseAuth autenticacao;
+
     Usuario usuario;
     private EditText editNome, editData, editSenha, editUsuario,editEmail;
     private Button bt_cd;

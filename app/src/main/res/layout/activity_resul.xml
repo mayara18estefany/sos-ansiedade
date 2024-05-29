@@ -8,7 +8,7 @@
     tools:context=".resul">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageVoltarRe"
         android:layout_width="80dp"
         android:layout_height="70dp"
         android:layout_marginTop="4dp"
@@ -80,16 +80,5 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="168dp"
-        android:layout_height="126dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/msgs" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

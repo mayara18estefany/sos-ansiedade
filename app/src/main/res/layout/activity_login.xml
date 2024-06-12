@@ -95,14 +95,14 @@
 
     <TextView
         android:id="@+id/textEsqueceuS"
-        android:layout_width="174dp"
-        android:layout_height="21dp"
+        android:layout_width="192dp"
+        android:layout_height="39dp"
         android:layout_marginTop="48dp"
         android:text="Esqueceu a senha?"
         android:textColor="#FBFAFA"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_EntrarLG" />
 
@@ -110,15 +110,15 @@
         android:id="@+id/textNovoCD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
+        android:layout_marginBottom="48dp"
         android:fontFamily="sans-serif-black"
         android:text="Novo Cadastro"
         android:textColor="#033359"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEsqueceuS"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.826" />
 </androidx.constraintlayout.widget.ConstraintLayout>

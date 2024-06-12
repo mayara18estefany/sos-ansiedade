@@ -95,8 +95,8 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="187dp"
-        android:layout_height="72dp"
+        android:layout_width="190dp"
+        android:layout_height="78dp"
         android:fontFamily="sans-serif"
         android:text="2. Respiração acelerada e falta de ar."
         android:textColor="@color/white"

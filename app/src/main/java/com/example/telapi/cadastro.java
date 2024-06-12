@@ -1,5 +1,6 @@
 package com.example.telapi;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,6 +10,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.Objects;
 
 
 public class cadastro extends AppCompatActivity {
@@ -16,6 +23,7 @@ public class cadastro extends AppCompatActivity {
     Usuario usuario;
     private EditText editNome, editData, editSenha, editUsuario,editEmail;
     private Button bt_cd;
+    private FirebaseAuth mAuth;
 
 
     @Override
@@ -23,6 +31,8 @@ public class cadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
         inicializar();
+
+        mAuth = FirebaseAuth.getInstance();
 
 
         bt_cd.setOnClickListener(new View.OnClickListener() {
@@ -60,8 +70,7 @@ public class cadastro extends AppCompatActivity {
                     Usuario.setDatadenascimento(editData.getText().toString());
 
 
-                    //Cadastro
-                    cadastrarUsuario();
+                    cadastrarUsuario(email, senha);
 
                 }else{
                     Toast.makeText(this, "Preencha a senha", Toast.LENGTH_SHORT).show();
@@ -76,9 +85,26 @@ public class cadastro extends AppCompatActivity {
 
         }
 
-    private void cadastrarUsuario() {
-
-
+    private void cadastrarUsuario(String email, String senha) {
     }
 
+    private void cadastrarUsuario(final String nome, String email, String senha) {
+        mAuth.createUserWithEmailAndPassword(email, senha)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Usuario usuario = new Usuario();
+                            usuario.setNome(nome);
+                            usuario.setEmail(email);
+                            usuario.setSenha(senha);
+
+                            Toast.makeText(cadastro.this, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
+
+                        } else {
+                            Toast.makeText(cadastro.this, "Falha no cadastro: " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
 }
